@@ -1,0 +1,36 @@
+<!-- <script type="text/javascript" src="js/libs/tau/mobile/js/tau.js"></script> -->
+<div class="contentWrapper contactlist">
+    <div class="container">
+        <div class="ui-page" id="searchInputPage">
+            <div class="ui-header" data-position="fixed">
+                <h1>Contacts</h1>
+                <a class="ui-header-btn ui-header-btn-text ui-header-btn-left" ui-sref="newEvent">BACK</a>
+                <a class="ui-header-btn ui-header-btn-text ui-header-btn-right" ng-click="addContacts()">ADD</a>
+            </div>
+            <div class="ui-content" id="search-input-content">
+                <ul id="searchList" class="ui-listview">
+                    <li class="ui-li-static">
+                        <div class="search-input-area">
+                            <input type="search" ng-model="search.name" name="search" id="page-search-input" value="" />
+                        </div>
+                    </li>
+                    <li class="ui-li-static li-select-all" ng-repeat="user in userContacts | filter:search">
+                        <label class="user-name">{{user.name}}</label>
+                        <input class="check-box" type="checkbox" ng-model="user.checked" />
+                    </li>
+                    <li class="ui-li-static" style="height: 300px;"></li>
+                </ul>
+                <div class="ui-popup" ng-show="popup">
+                    <div class="ui-popup-header">Alert</div>
+                    <div class="ui-popup-content popup-content-padding">
+                        Please select any contact to add!
+                    </div>
+                    <div class="ui-popup-footer">
+                        <a class="ui-btn" data-rel="back" data-inline="true" ng-click "popup = false">OK</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

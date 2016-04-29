@@ -1,0 +1,36 @@
+html {
+  font-size: 75%;
+  height: 100%;
+}
+html body {
+  font-family: 'SOne-F200_v20' !important;
+  overflow-x: hidden;
+  /*Setting scroll for the wrapper*/
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/mainbg.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+}
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6,
+html body span,
+html body .ui-page {
+  font-family: 'SOne-F200_v20' !important;
+}
+html body hr {
+  max-width: 100%;
+}
+html body a {
+  text-decoration: none;
+}
+html body a:hover {
+  text-decoration: none;
+}

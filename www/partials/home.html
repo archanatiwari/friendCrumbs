@@ -1,0 +1,78 @@
+<!-- <script type="text/javascript" src="js/libs/tau/mobile/js/tau.js"></script> -->
+<div class="contentWrapper homepage">
+    <div class="container">
+        <div class="ui-page ui-page-active" id="tabs_text_with_title">
+            <header-template></header-template>
+            <div class="ui-tabs">
+                <div class="row">
+                    <div class="ui-tabbar col s12">
+                        <!-- <ul>
+                        <li class="ui-li-anchor"><a href="" class="ui-tab-active">Upcoming</a></li>
+                        <li class="ui-li-anchor"><a href="">All</a></li>
+                    </ul> -->
+                        <ul class="tabs">
+                            <li class="tab col s3"><a href="#test1">Upcoming</a></li>
+                            <li class="tab col s3"><a class="active" href="#test2">All</a></li>
+                        </ul>
+                        <div id="test1" class="col s12">
+                            <ul class="ui-listview ">
+                                <li class="ui-li-static {{event.statusClass}}" ng-repeat="event in upcomingEvents | orderBy: 'eventDate'" ng-click="getEventDetails(event)">
+                                    <div class="kg-event-list">
+                                        <div class="event-detail">
+                                            <div class="event-date ">
+                                                <div class="event-dd">{{event.displayDate|date:"dd MMM"}}</div><span>{{event.eventTime}}</span>
+                                            </div>
+                                            <div class="event-dtls ">
+                                                <div class="event-name">{{event.eventName}}</div><span>{{event.eventLocation}},{{event.eventDescription}}</span>
+                                            </div>
+                                        </div>
+                                        <div ng-if="event.mystatus =='PENDING'">
+                                            <div class="event-member-list">
+                                                <ul class="member-list">
+                                                    <li>{{event.customisedInviteeList}} </li>
+                                                </ul>
+                                            </div>
+                                            <div class="pending-status">
+                                                <a class="ui-btn btn-fab" data-inline="true">Reject</a>
+                                                <a class="ui-btn btn-fab" data-inline="true">Accept</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ui-li-static" style="height: 600px;"></li>
+                            </ul>
+                        </div>
+                        <div id="test2" class="col s12">
+                            <ul class="ui-listview ">
+                                <li class="ui-li-static {{event.statusClass}}" ng-repeat="event in currentUser.eventList | orderBy: 'eventDate'" ng-click="getEventDetails(event)">
+                                    <div class="kg-event-list">
+                                        <div class="event-detail">
+                                            <div class="event-date ">
+                                                <div class="event-dd">{{event.displayDate|date:"dd MMM"}}</div><span>{{event.eventTime}}</span>
+                                            </div>
+                                            <div class="event-dtls ">
+                                                <div class="event-name">{{event.eventName}}</div><span>{{event.eventLocation}},{{event.eventDescription}}</span>
+                                            </div>
+                                        </div>
+                                        <div ng-if="event.mystatus =='PENDING'">
+                                            <div class="event-member-list">
+                                                <ul class="member-list">
+                                                    <li>{{event.customisedInviteeList}} </li>
+                                                </ul>
+                                            </div>
+                                            <div class="pending-status">
+                                                <a class="ui-btn btn-fab" data-inline="true">Reject</a>
+                                                <a class="ui-btn btn-fab" data-inline="true">Accept</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ui-li-static" style="height: 300px;"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
