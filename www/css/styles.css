@@ -278,6 +278,18 @@ ome .ui-header {
   text-align: center;
   padding: 12px 0;
 }
+.homepage .container,
+.navigationPage .container {
+  width: 100% !important;
+}
+.homepage #upcoming-pane,
+.navigationPage #upcoming-pane {
+  background-color: #fff !important;
+}
+.homepage #all-pane,
+.navigationPage #all-pane {
+  background-color: #fff !important;
+}
 .homepage nav,
 .navigationPage nav {
   background-color: transparent !important;
@@ -295,6 +307,10 @@ ome .ui-header {
 .homepage .tabs .tab a:hover,
 .navigationPage .tabs .tab a:hover {
   color: #fff !important;
+}
+.homepage .tabs .indicator,
+.navigationPage .tabs .indicator {
+  background-color: #e91e63 !important;
 }
 .homepage .ui-listview li,
 .navigationPage .ui-listview li {
@@ -341,9 +357,7 @@ ome .ui-header {
 @media only screen and (max-width: 992px) {
   .homepage nav .brand-logo,
   .navigationPage nav .brand-logo {
-    left: initial !important;
-    -webkit-transform: initial !important;
-    transform: initial !important;
+    left: 30% !important;
   }
 }
 .vertical-align-text {
