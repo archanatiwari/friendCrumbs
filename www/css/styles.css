@@ -10,7 +10,7 @@ html body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(../images/mainbg.png);
+  background-image: url(../assets/images/mainbg.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
   background-size: cover;
@@ -121,7 +121,7 @@ button {
   width: 100%;
   height: 100%;
 }
-.ui-header {
+ome .ui-header {
   background: transparent !important;
 }
 .loginpage {
@@ -208,6 +208,18 @@ button {
 #map a[href^="https://maps.google.com/maps"] {
   display: none !important;
 }
+.homepage,
+.navigationPage {
+  /*
+    .ui-tabbar a {
+        font-family: 'SOne-F400c_v21';
+        color: rgba(255, 255, 255, 0.7);
+    }
+    .ui-tabbar li:active {
+        background-color: @secondary-bg !important;
+    }
+    */
+}
 .homepage .kg-event-list .event-detail,
 .navigationPage .kg-event-list .event-detail {
   width: 100%;
@@ -266,10 +278,39 @@ button {
   text-align: center;
   padding: 12px 0;
 }
-.homepage .ui-tabbar a,
-.navigationPage .ui-tabbar a {
-  font-family: 'SOne-F400c_v21';
-  color: rgba(255, 255, 255, 0.7);
+.homepage .container,
+.navigationPage .container {
+  width: 100% !important;
+}
+.homepage #upcoming-pane,
+.navigationPage #upcoming-pane {
+  background-color: #fff !important;
+}
+.homepage #all-pane,
+.navigationPage #all-pane {
+  background-color: #fff !important;
+}
+.homepage nav,
+.navigationPage nav {
+  background-color: transparent !important;
+  box-shadow: inherit !important;
+}
+.homepage .tabs,
+.navigationPage .tabs {
+  background-color: transparent !important;
+}
+.homepage .tabs .tab a,
+.navigationPage .tabs .tab a {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+.homepage .tabs .tab a:hover,
+.navigationPage .tabs .tab a:hover {
+  color: #fff !important;
+}
+.homepage .tabs .indicator,
+.navigationPage .tabs .indicator {
+  background-color: #e91e63 !important;
 }
 .homepage .ui-listview li,
 .navigationPage .ui-listview li {
@@ -316,6 +357,12 @@ button {
   opacity: 50%;
   color: #000;
   font-family: 'SOne-F400c_v21' !important;
+}
+@media only screen and (max-width: 992px) {
+  .homepage nav .brand-logo,
+  .navigationPage nav .brand-logo {
+    left: 30% !important;
+  }
 }
 .vertical-align-text {
   display: -webkit-box;

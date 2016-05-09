@@ -49,7 +49,8 @@ button {
     height: 100%;
 }
 
-.ui-header {
+
+ome .ui-header {
     background: @secondary-bg !important;
 }
 
@@ -202,10 +203,43 @@ button {
             padding: 12px 0;
         }
     }
+    .container {
+        width: 100% !important;
+    }
+    #upcoming-pane {
+        background-color: #fff !important;
+    }
+    #all-pane {
+        background-color: #fff !important;
+    }
+    nav {
+        background-color: @secondary-bg !important;
+        box-shadow: inherit !important;
+    }
+    .tabs {
+        background-color: transparent !important;
+    }
+    .tabs .tab a {
+        color: #fff !important;
+        background-color: transparent !important;
+    }
+    .tabs .tab a:hover {
+        color: #fff !important;
+    }
+    .tabs .indicator {
+        background-color: #e91e63 !important;
+    }
+    //////////////////////// fonts commented //////////////////////////////
+    /*
     .ui-tabbar a {
         font-family: 'SOne-F400c_v21';
         color: rgba(255, 255, 255, 0.7);
     }
+    .ui-tabbar li:active {
+        background-color: @secondary-bg !important;
+    }
+    */
+    /////////////////////////////////////////////////////////////////////
     .ui-listview li {
         font-size: 16px;
         font-weight: 600;
@@ -245,6 +279,14 @@ button {
         color: #000;
         font-family: 'SOne-F400c_v21' !important;
     }
+
+    /////////////////////////////////////////////
+    @media only screen and (max-width: 992px) {
+        nav .brand-logo {
+            left: 30% !important;
+        }
+    }
+    /////////////////////////////////////////////
 }
 
 .vertical-align-text {
@@ -501,10 +543,12 @@ textarea.ui-text-input:disabled {
         background: @secondary-bg !important;
     }
     .event-name {
+
     padding:7px 16px !important;
     }
     .event-location{
     padding:7px 16px !important;
+
     }
     .textinput-box {
         label {
@@ -535,7 +579,7 @@ textarea.ui-text-input:disabled {
         text-align: center;
         color: #ffffff;
         font-size: 20px;
-        font-family:'SOne-F400_v21' !important;
+        font-family: 'SOne-F400_v21' !important;
         cursor: pointer;
         box-sizing: border-box;
         border: none;
@@ -556,7 +600,7 @@ textarea.ui-text-input:disabled {
         text-align: center;
         color: #ffffff;
         font-size: 20px;
-        font-family:'SOne-F400_v21' !important;
+        font-family: 'SOne-F400_v21' !important;
         cursor: pointer;
         box-sizing: border-box;
         border: none;
@@ -718,3 +762,5 @@ textarea.ui-text-input:disabled {
         }
     }
 }
+
+

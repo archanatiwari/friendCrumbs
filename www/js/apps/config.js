@@ -18,11 +18,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'partials/contactList.html',
             controller: 'contactListController'
         })
-//        .state('details', {
-//            url: '/details',
-//            templateUrl: 'partials/eventDetails.html',
-//            controller: 'eventDetailsController'
-//        })
         .state('navigation', {
             url: '/navigation',
             templateUrl: 'partials/navigation.html',
@@ -46,17 +41,3 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 });
 
-//app.run(function($rootScope){
-//	$rootScope.$on('$stateChangeSuccess', 
-//			function(event, toState, toParams, fromState, fromParams){ 
-//				//if(toState.name != "login"){
-//				loadJsFile('js/libs/tau/mobile/js/tau.js');
-//				//}
-//			});
-//});
-//
-//function loadJsFile(url){
-//    var fileref = document.createElement('script');
-//    fileref.setAttribute("type","text/javascript");
-//    fileref.setAttribute("src", url);
-//}

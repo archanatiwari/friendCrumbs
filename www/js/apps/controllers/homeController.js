@@ -1,4 +1,5 @@
 app.controller('homeController', function($scope, $state, SharedDataService) {
+    angular.element(document).find('ul.tabs').tabs();
     $scope.eventMemberList = function(inviteeList) {
         $scope.customisedInviteeList = "";
         $scope.arrivedPpl = [];
@@ -74,3 +75,4 @@ app.controller('homeController', function($scope, $state, SharedDataService) {
 
 
 });
+
